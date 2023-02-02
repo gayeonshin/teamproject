@@ -1,0 +1,507 @@
+@charset "utf-8";
+
+/* 섹션폰트 */
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+*{margin: 0; padding: 0; box-sizing: border-box; font-size: 10px; font-family: 'NanumSquare';}
+ul,ol,li{list-style: none;}
+a{text-decoration: none;}
+
+@media (max-width:600px){
+    /* 섹션 */
+#section {
+    width: 100%;
+    height: auto;
+    background-color: #fbf5f0;
+    position: relative;
+    font-size: 1.6rem;
+}
+
+#section #menu {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 11rem 0 0 0;
+    position: relative;
+}
+
+#section #menu h1 {
+    font-size: 3.2rem;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+}
+
+/* #section #menu h1::before {
+    content: '';
+    position: absolute;
+    display: none;
+    background: #d4000b;
+    width: 6.258rem;
+    height: 1.7rem;
+    bottom: 0.2rem;
+    opacity: 1;
+    z-index: -1;
+    transition: 1s;
+} */
+
+/* 메인메뉴구좌 */
+#section #menu .type {
+    padding-top: 5rem;
+}
+
+#section #menu .type ul {
+    width: 95%;
+    height: 5rem;
+    margin: auto;
+    display: flex;
+    overflow: hidden;
+}
+
+#section #menu .type ul li {
+    width: 25%;
+    float: left;
+    text-align: center;
+    line-height: 5rem;
+    background-color: #fff;
+    transform: skewX(-30deg) translateX(-1.9rem);
+    flex-shrink: 0;
+    margin: 0 0.48rem;
+}
+
+#section #menu .type ul li a {
+    color: #333;
+    font-size: 2rem;
+    transform: skewX(30deg);
+    display: block;
+}
+
+#section #menu .type ul li:first-child {
+    background-color: #d4000b;
+}
+
+#section #menu .type ul li:first-child a {
+    color: #fff;
+}
+/* 메인메뉴구좌끝 */
+
+#section #menu #info {
+    width: 95%;
+    height: auto;
+    margin: auto;
+    padding: 1.5% 0;
+    position: relative;
+}
+
+#section #menu #info .contenttop {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 팝업창버튼 */
+#section #menu #info .btn {
+    width: 27.8rem;
+    height: 5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 1rem;
+    backdrop-filter: blur(7px);
+    border-radius: 50px;
+    border: none;
+    text-align: center;
+    line-height: 5rem;
+    cursor: pointer;
+}
+
+/* 서브메뉴구좌 */
+#section #menu #info ul {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#section #menu #info ul li {
+    padding: 0 2%;
+    line-height: 1.6rem;
+}
+
+#section #menu #info ul li:first-child a {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#section #menu #info ul li a {
+    font-size: 1.6rem;
+    color: #333;
+}
+
+#section #menu #info ul li a:hover {
+    color: #d4000b;
+}
+
+#section #menu #info ul li:first-child a:hover {
+    color: #333;
+}
+/* 서브메뉴구좌끝 */
+
+#section #menu #info .content {
+    width: 100%;
+    height: auto;
+    margin-top: 5%;
+    position: relative;
+    overflow: hidden;
+}
+
+#section #menu #info .content .menuCount {
+    width: 100%;
+    height: auto;
+    position: relative;
+    float: left;
+}
+
+/* 오븐바사삭구좌 */
+#section #menu #info .content .menuCount .chicken {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    border-radius: 5rem;
+    text-align: center;
+    padding-bottom: 3.5rem;
+}
+
+#section #menu #info .content .menuCount .chicken img {
+    width: 80%;
+}
+
+#section #menu #info .content .menuCount .chicken h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    position: relative;
+    z-index: 3;
+}
+
+/* #section #menu #info .content .menuCount .chicken h2::before {
+    content: '';
+    position: absolute;
+    display: none;
+    background: #d4000b;
+    width: 10.7rem;
+    height: 1rem;
+    bottom: 0.2rem;
+    opacity: 1;
+    z-index: -1;
+    transition: 1s;
+} */
+
+#section #menu #info .content .menuCount .chicken p {
+    font-size: 1.8rem;
+    padding: 2.5rem 0;
+}
+
+#section #menu #info .content .menuCount .chicken span {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #d4000b;
+}
+/* 오븐바사삭구좌끝 */
+
+/* 주문금액구좌 */
+#section #menu #info .content .menuCount .count {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    border-radius: 5rem;
+    margin-top: 2rem;
+    padding: 3rem 4rem 7rem 4rem;
+}
+
+#section #menu #info .content .menuCount .count dl {
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#section #menu #info .content .menuCount .count dt {
+    color: #333;
+    display: inline;
+    font-size: 1.6rem;
+}
+
+#section #menu #info .content .menuCount .count dd {
+    color: #000;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+#section #menu #info .content .menuCount .count .amount {
+    width: 100%;
+    height: 3.2rem;
+    margin: 3% 0;
+    border: 1px solid #000;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.6rem;
+}
+
+#section #menu #info .content .menuCount .count .amount button {
+    width: 4.8rem;
+    height: 3.2rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 1.6rem;
+}
+
+#section #menu #info .content .menuCount .count .amount input {
+    width: 100%;
+    height: 3.2rem;
+    border: none;
+    background: none;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+#section #menu #info .content .menuCount .count .total dt {
+    color: #d4000b;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+#section #menu #info .content .menuCount .count .total dd {
+    color: #d4000b;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+#section #menu #info .content .menuCount .select {
+    width: 50%;
+    height: 7rem;
+    background-color: #d4000b;
+    color: #fff;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 7rem;
+    border: none;
+    border-radius: 10rem;
+    position: relative;
+    top: -3.5rem;
+    left: 25%;
+    cursor: pointer;
+}
+/* 주문금액구좌끝 */
+
+#section #menu #info .content .selectbox {
+    width: 100%;
+    height: auto;
+    margin-top: 5%;
+    background-color: #d4000b;
+    border-radius: 3rem;
+    padding: 5rem 2rem;
+}
+
+/* [필수]선택 */
+#section #menu #info .content .selectbox .option {
+    width: 100%;
+    height: auto;
+    padding-top: 4rem;
+}
+
+#section #menu #info .content .selectbox .option h5 {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 1.6rem;
+    text-align: left;
+    padding: 0;
+}
+
+#section #menu #info .content .selectbox .option .optionSlider1 {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    border-radius: 3.5rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 4px 4px 8px -4px #333;
+}
+
+#section #menu #info .content .selectbox .option .optionSlider1 .item1 {
+    width: 30%;
+    height: 5rem;
+    border-radius: 3.5rem;
+    color: #000;
+    text-align: center;
+    line-height: 5rem;
+    font-weight: bold;
+    font-size: 1.7rem;
+    margin: 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#section #menu #info .content .selectbox .option .optionSlider1 .item1.active1 {
+    background-color: #d4000b;
+    color: #fff;
+    box-shadow: 4px 4px 8px -4px #666;
+}
+/* [필수]선택끝 */
+
+/* 추가선택 */
+#section #menu #info .content .selectbox .option .optionSlider2 {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    border-radius: 3.5rem;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 4px 4px 8px -4px #333;
+}
+
+#section #menu #info .content .selectbox .option .optionSlider2 .item2 {
+    width: 33%;
+    height: 5rem;
+    color: #000;
+    text-align: center;
+    line-height: 5rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin: 0;
+    cursor: pointer;
+    padding: 0;
+    border: 3px solid white;
+}
+
+#section #menu #info .content .selectbox .option .optionSlider2 .item2.active2 {
+    border-radius: 3.5rem;
+    border: 3px solid #d4000b;
+    box-shadow: 4px 4px 8px -4px #666;
+}
+/* 추가선택끝 */
+/* 섹션끝 */
+
+/* 팝업 */
+#section #popup {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    display: none;
+}
+
+#section #popup #popwrap {
+    width: 100%;
+    height: auto;
+    background-color: #fbf5f0;
+    position: relative;
+    top: 21%;
+    left: 0;
+    padding: 8rem 0;
+}
+
+#section #popup #popwrap .popmenu {
+    width: 100%;
+    height: 5rem;
+    margin: auto;
+    overflow: hidden;
+}
+
+#section #popup #popwrap .popmenu ul {
+    width: 104%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#section #popup #popwrap .popmenu ul li {
+    width: 32.5%;
+    background-color: #fff;
+    text-align: center;
+    line-height: 5rem;
+    transform: skewX(-30deg) translateX(-14px);
+}
+
+#section #popup #popwrap .popmenu ul li a {
+    color: #000;
+    font-size: 2rem;
+    font-weight: bold;
+    transform: skewX(30deg);
+    display: block;
+}
+
+#section #popup #popwrap .popmenu ul li.active {
+    background-color: #d4000b;
+}
+
+#section #popup #popwrap .popmenu ul li.active a {
+    color: #fff;
+}
+
+#section #popup #popwrap .div2,
+.div3 {
+    display: none;
+}
+
+#section #popup #popwrap .popcontent h5 {
+    font-size: 1.1rem;
+    padding: 4rem 2rem;
+    text-align: left;
+}
+
+#section #popup #popwrap .div3 .popcontent .tablewrap {
+    overflow-y: scroll;
+    height: 25rem;
+}
+
+#section #popup #popwrap .popcontent table {
+    width: 100%;
+    background-color: #fff;
+    border-collapse: collapse;
+}
+
+#section #popup #popwrap .popcontent table tr {
+    height: 4.8rem;
+}
+
+#section #popup #popwrap .popcontent table tr th {
+    border-bottom: 1px solid #666;
+    text-align: left;
+    padding: 0 0 0 2.496rem;
+    font-size: 1.6rem;
+}
+
+#section #popup #popwrap .popcontent table tr td {
+    padding: 0 0 0 2.496rem;
+    font-size: 1.2rem;
+}
+
+#section #popup #popwrap .close {
+    width: 48%;
+    height: 7rem;
+    background-color: #d4000b;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 5rem;
+    text-align: center;
+    line-height: 7rem;
+    position: absolute;
+    bottom: -3.488rem;
+    left: 25%;
+    cursor: pointer;
+}
+/* 팝업끝 */
+}

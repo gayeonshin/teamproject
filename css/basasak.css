@@ -1,0 +1,311 @@
+@charset "utf-8";
+*{margin: 0; padding: 0; box-sizing: border-box;}
+ul,ol,li{list-style: none;}
+a{text-decoration: none;}
+
+body{background: url(https://www.goobne.co.kr/2206_micro_img/main_BG.jpg); background-size: 100% auto;} 
+
+@media(max-width:680px){
+    #header{width: 100%; height: 15vw; background-color: #573b1c; position: relative;}
+    #header .basasaklogo{width: 20%; height: auto; position: absolute; top: 0.625rem; left: 2%;}
+    #header .basasaklogo img{width: 100%;}
+
+    #header .nav{width: 75%; height: 54%;  margin-top: 5.4%; float: right; display: flex;}
+    #header .nav .menu{width: 100%; padding: 7.5% 0%; display: flex; justify-content: space-around; align-items: center;}
+    #header .nav .menu li{width: 20%; display: flex; justify-content: flex-end; align-items: center;}
+    #header .nav .menu li .menu_txt,.menu_hover{width: 100%;}
+    #header .nav .menu li .menu_hover{display: none;}
+    #header .nav .menu li:hover .menu_txt{display: none;}
+    #header .nav .menu li:hover .menu_hover{display: inline-block;}
+
+    #header .evt_btn{display: block; width: 28%; height: 6.4vw; position: absolute; top: 0; right: 31%;}
+    #header .evt_btn img{width: 100%;}
+
+    #header .goobne{width: 31%; height: 6.4vw; background-color: #d1000a; position: absolute; top: 0; right: 0; display: flex; justify-content: center; align-items: center;}
+    #header .goobne .goobnelogo{width: 80%; height: 60%; margin: auto; padding: 1%; display: flex; justify-content: center; align-items: center;}
+    #header .goobne .goobnelogo img,.return img{width: 100%;}
+    #header .goobne .return{display: none;}
+    #header .goobne:hover .goobnelogo{display: none;}
+    #header .goobne:hover .return{width: 80%; height: 60%; margin: auto; padding: 1%; display: flex; justify-content: center; align-items: center;}
+
+    #section{width: 100%; margin: 0 auto;  position: relative; text-align: center;}
+    #section #title{width: 80%; margin: 2% 0 3% 0;}
+
+    #section #map{background: url(http://www.xn--9i1b89owjy5lfa431as3k.com/images/221114_index/map_mo_2.jpg) no-repeat; width: 100%; height: 135vw; margin-bottom: 8%; background-size: 100% auto; position: relative;}
+
+    #section #map .oven{margin: 0; padding: 0;}
+    #section #map .oven .oven_txt{display: none;}
+    #section #map .oven .oven_hover{display: inline-block; position: absolute; width: 17%; top: 8.5%; left: 12%;}
+    #section #map .oven .colum{display: inline-block; position: absolute; width: 32.5%; top: 10.2%; left: 36%; transition: all 0.2s; animation: colum 2s; animation-direction: alternate; animation-timing-function: ease-in-out; animation-iteration-count: infinite;}
+    @keyframes colum{
+        0%{
+            top: 10%;
+        }
+        100%{
+            top: 11%;
+        }
+    }
+
+    #section #map .pepper{margin: 0; padding: 0;}
+    #section #map .pepper .pepper_txt{display: none;}
+    #section #map .pepper .pepper_hover{display: inline-block; position: absolute; width: 19%; top: 48.6%; left: 29.2%;}
+    #section #map .pepper .tra{display: inline-block; position: absolute; width: 19%; top: 61%; left: 38%; transition: all 0.1s; animation: tra 1s; animation-direction: alternate; animation-timing-function: ease-out; animation-iteration-count: infinite;}
+    @keyframes tra{
+        0%{
+            top: 60%;
+        }
+        100%{
+            top: 62%;
+        }
+    }
+
+    #section #map .cheese{margin: 0; padding: 0;}
+    #section #map .cheese .cheese_txt{display: none;}
+    #section #map .cheese .cheese_hover{display: inline-block; position: absolute; width: 17%; top: 46.5%; right: 2%;}
+    #section #map .cheese .bara{display: inline-block; position: absolute; width: 20%; top: 39%; right: 19%; transition: all 0.1s; animation: bara 1s; animation-direction: alternate; animation-timing-function: ease-in; animation-iteration-count: infinite;}
+    @keyframes bara{
+        0%{
+            top: 39%;
+            right: 18%;
+        }
+        100%{
+            top: 38%;
+            right: 19%;
+        }
+    }
+
+    #section #map .wet{margin: 0; padding: 0;}
+    #section #map .wet .wet_txt{display: inline-block; position: absolute; width: 12%; top: 38%; right: 52%;}
+    #section #map .wet .wet_txthover{display: none;}
+    #section #map .wet .wet_hover{display: none;}
+    #section #map .wet:hover .wet_txt{display: none;}
+    #section #map .wet:hover .wet_txthover{display: inline-block; position: absolute; width: 12%; top: 38%; right: 52%;}
+    #section #map .wet:hover .wet_hover{display: inline-block; position: absolute; width: 33%; top: 28%; right: 64%;}
+
+    #section #map .soggy{margin: 0; padding: 0;}
+    #section #map .soggy .sog_txt{display: inline-block; position: absolute; width: 13%; top: 79%; left: 70.5%;}
+
+    #section #map .soggy .namhae{margin: 0; padding: 0;}
+    #section #map .soggy .namhae .namhae_txt{display: none;}
+    #section #map .soggy .namhae .namhae_hover{display: inline-block; position: absolute; width: 19%; left: 5%; bottom: 24.5%;}
+
+    #section #map .soggy .garlic{margin: 0; padding: 0;}
+    #section #map .soggy .garlic .garlic_txt{display: none;}
+    #section #map .soggy .garlic .garlic_hover{display: block; position: absolute; width: 21%; left: 26%; bottom: 8.5%;}
+
+    #section #map .soggy .compass{display: block; position: absolute; background: url(https://www.goobne.co.kr/2206_micro_img/com_txt.png); background-size: 100%; width: 21%; top: 24%; right: 4.6%;}
+    #section #map .soggy .compass .compass_img{display: inline-block; width: 100%; animation: compass_img 8s linear infinite; transform-origin: 50% 50%;}
+    @keyframes compass_img{
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+
+    #footer{display: block; width: 100%; margin: auto;}
+    #footer img{width: 100%;}
+}
+@media(min-width:681px) and (max-width:1020px) {
+    #header{width: 100%; height: 7.3125rem; background-color: #573b1c; position: relative;}
+    #header .basasaklogo{width: 10.25rem; height: 5.1494rem; position: absolute; top: 1.125rem; left: 2.5%;}
+    #header .basasaklogo img{width: 100%;}
+
+    #header .nav{width: 70%; height: 54%; margin-top: 5.4%; float: right; display: flex;}
+    #header .nav .menu{width: 100%; padding: 1.2% 5%; display: flex; justify-content: space-around; align-items: center;}
+    #header .nav .menu li{width: 20%; display: flex; justify-content: flex-end; align-items: center;}
+    #header .nav .menu li .menu_txt,.menu_hover{width: 100%;}
+    #header .nav .menu li .menu_hover{display: none;}
+    #header .nav .menu li:hover .menu_txt{display: none;}
+    #header .nav .menu li:hover .menu_hover{display: inline-block;}
+
+    #header .evt_btn{display: none;}
+
+    #header .goobne{width: 32%; height: 3.5rem; background-color: #d1000a; position: absolute; top: 0; right: 0; display: flex; justify-content: center; align-items: center;}
+    #header .goobne .goobnelogo{width: 80%; height: 60%; margin: 6% 10%; padding: 1%; display: flex; justify-content: center; align-items: center;}
+    #header .goobne .goobnelogo img,.return img{width: 100%;}
+    #header .goobne .return{display: none;}
+    #header .goobne:hover .goobnelogo{display: none;}
+    #header .goobne:hover .return{width: 80%; height: 60%; margin: 6% 10%; padding: 1%; display: flex; justify-content: center; align-items: center;}
+
+    #section{width: 100%; margin: 0 auto; padding-top: 1.5rem; position: relative; text-align: center;}
+    #section #title{width: 64%;}
+
+    #section #map{background: url(http://www.xn--9i1b89owjy5lfa431as3k.com/images/221114_index/map_mo_2.jpg) no-repeat; width: 100%; height: 135vw; margin: 1.3% 0 4.5% 0; background-size: 100% auto; position: relative;}
+
+    #section #map .oven{margin: 0; padding: 0;}
+    #section #map .oven .oven_txt{display: none;}
+    #section #map .oven .oven_hover{display: inline-block; position: absolute; width: 17%; top: 8.5%; left: 12%;}
+    #section #map .oven .colum{display: inline-block; position: absolute; width: 32.5%; top: 10.2%; left: 36%; transition: all 0.2s; animation: colum 2s; animation-direction: alternate; animation-timing-function: ease-in-out; animation-iteration-count: infinite;}
+    @keyframes colum{
+        0%{
+            top: 10%;
+        }
+        100%{
+            top: 11%;
+        }
+    }
+
+    #section #map .pepper{margin: 0; padding: 0;}
+    #section #map .pepper .pepper_txt{display: none;}
+    #section #map .pepper .pepper_hover{display: inline-block; position: absolute; width: 19%; top: 48.6%; left: 29.2%;}
+    #section #map .pepper .tra{display: inline-block; position: absolute; width: 19%; top: 61%; left: 38%; transition: all 0.1s; animation: tra 1s; animation-direction: alternate; animation-timing-function: ease-out; animation-iteration-count: infinite;}
+    @keyframes tra{
+        0%{
+            top: 60%;
+        }
+        100%{
+            top: 62%;
+        }
+    }
+
+    #section #map .cheese{margin: 0; padding: 0;}
+    #section #map .cheese .cheese_txt{display: none;}
+    #section #map .cheese .cheese_hover{display: inline-block; position: absolute; width: 17%; top: 46.5%; right: 2%;}
+    #section #map .cheese .bara{display: inline-block; position: absolute; width: 20%; top: 39%; right: 19%; transition: all 0.1s; animation: bara 1s; animation-direction: alternate; animation-timing-function: ease-in; animation-iteration-count: infinite;}
+    @keyframes bara{
+        0%{
+            top: 39%;
+            right: 18%;
+        }
+        100%{
+            top: 38%;
+            right: 19%;
+        }
+    }
+
+    #section #map .wet{margin: 0; padding: 0;}
+    #section #map .wet .wet_txt{display: inline-block; position: absolute; width: 12%; top: 38%; right: 52%;}
+    #section #map .wet .wet_txthover{display: none;}
+    #section #map .wet .wet_hover{display: none;}
+    #section #map .wet:hover .wet_txt{display: none;}
+    #section #map .wet:hover .wet_txthover{display: inline-block; position: absolute; width: 12%; top: 38%; right: 52%;}
+    #section #map .wet:hover .wet_hover{display: inline-block; position: absolute; width: 33%; top: 28%; right: 64%;}
+
+    #section #map .soggy{margin: 0; padding: 0;}
+    #section #map .soggy .sog_txt{display: inline-block; position: absolute; width: 13%; top: 79%; left: 70.5%;}
+
+    #section #map .soggy .namhae{margin: 0; padding: 0;}
+    #section #map .soggy .namhae .namhae_txt{display: none;}
+    #section #map .soggy .namhae .namhae_hover{display: inline-block; position: absolute; width: 19%; left: 5%; bottom: 24.5%;}
+
+    #section #map .soggy .garlic{margin: 0; padding: 0;}
+    #section #map .soggy .garlic .garlic_txt{display: none;}
+    #section #map .soggy .garlic .garlic_hover{display: block; position: absolute; width: 21%; left: 26%; bottom: 8.5%;}
+
+    #section #map .soggy .compass{display: block; position: absolute; background: url(https://www.goobne.co.kr/2206_micro_img/com_txt.png); background-size: 100%; width: 21%; top: 24%; right: 4.6%;}
+    #section #map .soggy .compass .compass_img{display: inline-block; width: 100%; animation: compass_img 8s linear infinite; transform-origin: 50% 50%;}
+    @keyframes compass_img{
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+
+    #footer{display: block; width: 100%; margin: auto;}
+    #footer img{width: 100%;}
+}
+@media(min-width:1021px){
+    #header{width: 100%; height: 7.3125rem; background-color: #573b1c; position: relative;}
+    #header .basasaklogo{width: 10.25rem; height: 5.1494rem; position: absolute; top: 1.125rem; left: 2.5%;}
+    #header .basasaklogo img{width: 100%;}
+
+    #header .nav{width: 75%; height: 100%; float: right; display: flex;}
+    #header .nav .menu{width: 72%; padding: 1.2% 3.5%; display: flex; justify-content: space-around; align-items: center;}
+    #header .nav .menu li{width: 50%; display: flex; justify-content: flex-end; align-items: center;}
+    #header .nav .menu li .menu_txt,.menu_hover{width: 100%;}
+    #header .nav .menu li .menu_hover{display: none;}
+    #header .nav .menu li:hover .menu_txt{display: none;}
+    #header .nav .menu li:hover .menu_hover{display: inline-block;}
+
+    #header .evt_btn{display: none;}
+
+    #header .goobne{width: 20%; height: 100%; background-color: #d1000a; position: absolute; top: 0; right: 0; display: flex; justify-content: center; align-items: center;}
+    #header .goobne .goobnelogo{width: 80%; height: 60%; margin: 6% 10%; padding: 1%; display: flex; justify-content: center; align-items: center;}
+    #header .goobne .goobnelogo img,.return img{width: 100%;}
+    #header .goobne .return{display: none;}
+    #header .goobne:hover .goobnelogo{display: none;}
+    #header .goobne:hover .return{width: 80%; height: 60%; margin: 6% 10%; padding: 1%; display: flex; justify-content: center; align-items: center;}
+
+    #section{width: 100%; margin: 0 auto; padding-top: 4.5rem; position: relative;}
+    #section #title{width: 38.0625rem; position: absolute; left: calc(50% - 19rem); top: 2.8125rem;}
+
+    #section #map{background: url(http://www.xn--9i1b89owjy5lfa431as3k.com/images/221114_index/map_pc_2.png) no-repeat; width: 96%; height: 48vw; background-size: 100% auto; margin: 0 auto; position: relative;}
+
+    #section #map .oven{margin: 0; padding: 0;}
+    #section #map .oven .oven_txt{width: 11%; top: 29.5%; left: 7.5%; display: inline-block; position: absolute;}
+    #section #map .oven .oven_hover{display: none;}
+    #section #map .oven .colum{display: inline-block; position: absolute; width: 20%; top: 17.2%; left: 23%; transition: all 0.2s; animation: colum 2s; animation-direction: alternate; animation-timing-function: ease-in-out; animation-iteration-count: infinite;}
+    @keyframes colum{
+        0%{
+            top: 17%;
+        }
+        100%{
+            top: 18%;
+        }
+    }
+    #section #map .oven:hover .oven_txt{display: none;}
+    #section #map .oven:hover .oven_hover{display: inline-block; position: absolute; width: 11%; top: 29.5%; left: 7.5%;}
+
+    #section #map .pepper{margin: 0; padding: 0;}
+    #section #map .pepper .pepper_txt{display: inline-block; position: absolute; width: 10%; top: 42.2%; left: 43.6%;}
+    #section #map .pepper .pepper_hover{display: none;}
+    #section #map .pepper .tra{display: inline-block; position: absolute; width: 11.2%; top: 47%; left: 50.8%; transition: all 0.1s; animation: tra 1s; animation-direction: alternate; animation-timing-function: ease-out; animation-iteration-count: infinite;}
+    @keyframes tra{
+        0%{
+            top: 46%;
+        }
+        100%{
+            top: 48%;
+        }
+    }
+    #section #map .pepper:hover .pepper_txt{display: none;}
+    #section #map .pepper:hover .pepper_hover{display: inline-block; position: absolute; width: 10%; top: 42.2%; left: 43.6%;}
+
+    #section #map .cheese{margin: 0; padding: 0;}
+    #section #map .cheese .cheese_txt{display: inline-block; position: absolute; width: 9.4%; top: 70.2%; right: 1%;}
+    #section #map .cheese .cheese_hover{display: none;}
+    #section #map .cheese .bara{display: inline-block; position: absolute; width: 12%; top: 61%; right: 11%; transition: all 0.1s; animation: bara 1s; animation-direction: alternate; animation-timing-function: ease-in; animation-iteration-count: infinite;}
+    @keyframes bara{
+        0%{
+            top: 61%;
+            right: 10%;
+        }
+        100%{
+            top: 60%;
+            right: 11%;
+        }
+    }
+    #section #map .cheese:hover .cheese_txt{display: none;}
+    #section #map .cheese:hover .cheese_hover{display: inline-block; position: absolute; width: 9.4%; top: 70.2%; right: 1%;}
+
+    #section #map .wet{margin: 0; padding: 0;}
+    #section #map .wet .wet_txt{display: inline-block; position: absolute; width: 7.5%; top: 56%; right: 23%;}
+    #section #map .wet .wet_txthover{display: none;}
+    #section #map .wet .wet_hover{display: none;}
+    #section #map .wet:hover .wet_txt{display: none;}
+    #section #map .wet:hover .wet_txthover{display: inline-block; position: absolute; width: 7.5%; top: 56%; right: 23%;}
+    #section #map .wet:hover .wet_hover{display: inline-block; position: absolute; width: 20.5%; top: 22%; right: 24%;}
+
+    #section #map .soggy{margin: 0; padding: 0;}
+    #section #map .soggy .sog_txt{display: inline-block; position: absolute; width: 8.5%; top: 56%; left: 30%;}
+
+    #section #map .soggy .namhae{margin: 0; padding: 0;}
+    #section #map .soggy .namhae .namhae_txt{display: inline-block; position: absolute; width: 13%; left: 12%; bottom: 15.5%;}
+    #section #map .soggy .namhae .namhae_hover{display: none;}
+    #section #map .soggy .namhae:hover .namhae_txt{display: none;}
+    #section #map .soggy .namhae:hover .namhae_hover{display: inline-block; position: absolute; width: 13%; left: 12%; bottom: 15.5%;}
+
+    #section #map .soggy .garlic{margin: 0; padding: 0;}
+    #section #map .soggy .garlic .garlic_txt{display: inline-block; position: absolute; width: 11%; left: 28.5%; bottom: 6%;}
+    #section #map .soggy .garlic .garlic_hover{display: none;}
+    #section #map .soggy .garlic:hover .garlic_txt{display: none;}
+    #section #map .soggy .garlic:hover .garlic_hover{display: inline-block; position: absolute; width: 11%; left: 28.5%; bottom: 6%;}
+
+    #section #map .soggy .compass{display: block; position: absolute; background: url(https://www.goobne.co.kr/2206_micro_img/com_txt.png); background-size: 100%; width: 11%; top: 42.6%; right: 8.2%;}
+    #section #map .soggy .compass .compass_img{display: inline-block; width: 100%; animation: compass_img 8s linear infinite; transform-origin: 50% 50%;}
+    @keyframes compass_img{
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+
+    #footer{display: none;}
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>goobne</title>
+    <link rel="stylesheet" href="css/oven.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <div class="basasaklogo">
+                <a href="basasak.html">
+                    <img src="https://www.goobne.co.kr/2206_micro_img/basak_logo.png" alt="basasaklogo">
+                </a>
+            </div>
+            <div class="nav">
+                <ul class="menu">
+                    <li>
+                        <a href="#">
+                            <img src="https://www.goobne.co.kr/2206_micro_img/menu004.png" class="menu_txt" alt="menu_txt">
+                            <img src="https://www.goobne.co.kr/2206_micro_img/menu004_on.png" class="menu_hover" alt="menu_hover">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="https://www.goobne.co.kr/2206_micro_img/menu_nh_off.png" class="menu_txt" alt="menu_txt">
+                            <img src="https://www.goobne.co.kr/2206_micro_img/menu_nh_off_on.png" class="menu_hover" alt="menu_hover">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="oven.html">
+                            <img src="https://www.goobne.co.kr/2206_micro_img/menu1_on.png" class="menu_txt" alt="menu_txt">
+                            <img src="https://www.goobne.co.kr/2206_micro_img/menu1_on.png" class="menu_hover" alt="menu_hover">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pepper.html">
+                            <img src="https://www.goobne.co.kr/2206_micro_img/menu2.png" class="menu_txt" alt="menu_txt">
+                            <img src="https://www.goobne.co.kr/2206_micro_img/menu2_on.png" class="menu_hover" alt="menu_hover">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cheese.html">
+                            <img src="https://www.goobne.co.kr/2206_micro_img/menu3.png" class="menu_txt" alt="menu_txt">
+                            <img src="https://www.goobne.co.kr/2206_micro_img/menu3_on.png" class="menu_hover" alt="menu_hover"> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="https://www.goobne.co.kr/2206_micro_img/menu5.png" class="menu_txt" alt="menu_txt">
+                            <img src="https://www.goobne.co.kr/2206_micro_img/menu5_on.png" class="menu_hover" alt="menu_hover">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="evt_btn">
+                <a href="#">
+                    <img src="https://www.goobne.co.kr/2206_micro_img/menu5_MO.jpg" alt="evt_btn">
+                </a>
+            </div>
+            <div class="goobne">
+                <div class="goobnelogo">
+                    <a href="index.html">
+                        <img src="https://www.goobne.co.kr/2206_micro_img/GN_logo.png" alt="Goobnelogo">
+                    </a>
+                </div>
+                <div class="return">
+                    <a href="index.html">
+                        <img src="https://www.goobne.co.kr/2206_micro_img/GN_logo_on.png" alt="굽네 홈페이지 돌아가기">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="section">
+            <div class="colum_main">
+                <img src="https://www.goobne.co.kr/2206_micro_img/colum_main.png" class="crispy_discovery" alt="crispy_discovery">
+                <img src="https://www.goobne.co.kr/2206_micro_img/colum_ttl.png" class="columbasak" alt="columbasak">
+            </div>
+            <div class="colum_sub">
+                <img src="https://www.goobne.co.kr/2206_micro_img/colum_sub_txt.png" class="colum_info" alt="colum_info">
+                <a href="sub2.html">
+                    <img src="https://www.goobne.co.kr/2206_micro_img/colum_sub_img.png" class="oven_basasak" alt="oven_basasak">
+                </a>
+            </div>
+            <div class="eat">
+                <img src="https://www.goobne.co.kr/2206_micro_img/colum_f.png" class="saecham" alt="saecham">
+            </div>
+            <div class="move">
+                <video src="video/main_video_columbasak_2.mp4" loop muted autoplay></video>
+            </div>
+            <div class="basasak_univ">
+                <img src="https://www.goobne.co.kr/2206_micro_img/sub_common.png" class="basasak_info" alt="basasak_info">
+                <img src="https://www.goobne.co.kr/2206_micro_img/cha_map.png" class="relationship" alt="relationship">
+                <img src="https://www.goobne.co.kr/2206_micro_img/cha_map_btn.png" class="btn" alt="btn">
+            </div>
+        </div>
+        <div id="popup">
+            <span><i class="fa-solid fa-xmark"></i></span>
+            <img src="https://www.goobne.co.kr/2206_micro_img/cha_map_detail.jpg" class="charactor" alt="charactor">
+        </div>
+    </div>
+    <script>
+        $(function(){
+            $('.btn').click(function(){
+                $('#popup').css('display','block');
+            });
+            $('#popup span').click(function(){
+                $('#popup').css('display','none');
+            });
+        });
+    </script>
+</body>
+</html>
