@@ -31,7 +31,9 @@ body{background: url(https://www.goobne.co.kr/2206_micro_img/main_BG.jpg); backg
     #section{width: 100%; margin: 0 auto;  position: relative; text-align: center;}
     #section #title{width: 80%; margin: 2% 0 3% 0;}
 
-    #section #map{background: url(http://www.xn--9i1b89owjy5lfa431as3k.com/images/221114_index/map_mo_2.jpg) no-repeat; width: 100%; height: 135vw; margin-bottom: 8%; background-size: 100% auto; position: relative;}
+    #section #map{width: 100%; height: 135vw; margin-bottom: 8%; background-size: 100% auto; position: relative;}
+    #section #map .map1{display: none;}
+    #section #map .map2{width: 100%;}
 
     #section #map .oven{margin: 0; padding: 0;}
     #section #map .oven .oven_txt{display: none;}
@@ -129,7 +131,9 @@ body{background: url(https://www.goobne.co.kr/2206_micro_img/main_BG.jpg); backg
     #section{width: 100%; margin: 0 auto; padding-top: 1.5rem; position: relative; text-align: center;}
     #section #title{width: 64%;}
 
-    #section #map{background: url(http://www.xn--9i1b89owjy5lfa431as3k.com/images/221114_index/map_mo_2.jpg) no-repeat; width: 100%; height: 135vw; margin: 1.3% 0 4.5% 0; background-size: 100% auto; position: relative;}
+    #section #map{width: 100%; height: 135vw; margin: 1.3% 0 4.5% 0; background-size: 100% auto; position: relative;}
+    #section #map .map1{display: none;}
+    #section #map .map2{width: 100%;}
 
     #section #map .oven{margin: 0; padding: 0;}
     #section #map .oven .oven_txt{display: none;}
@@ -227,7 +231,9 @@ body{background: url(https://www.goobne.co.kr/2206_micro_img/main_BG.jpg); backg
     #section{width: 100%; margin: 0 auto; padding-top: 4.5rem; position: relative;}
     #section #title{width: 38.0625rem; position: absolute; left: calc(50% - 19rem); top: 2.8125rem;}
 
-    #section #map{background: url(http://www.xn--9i1b89owjy5lfa431as3k.com/images/221114_index/map_pc_2.png) no-repeat; width: 96%; height: 48vw; background-size: 100% auto; margin: 0 auto; position: relative;}
+    #section #map{width: 96%; height: 48vw; background-size: 100% auto; margin: 0 auto; position: relative;}
+    #section #map .map1{width: 100%;}
+    #section #map .map2{display: none;}
 
     #section #map .oven{margin: 0; padding: 0;}
     #section #map .oven .oven_txt{width: 11%; top: 29.5%; left: 7.5%; display: inline-block; position: absolute;}

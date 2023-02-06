@@ -108,7 +108,6 @@ a{text-decoration: none;}
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
     font-size: 1.4rem;
-    backdrop-filter: blur(7px);
     border-radius: 50px;
     border: none;
     text-align: center;
