@@ -107,7 +107,7 @@
                                 <img src="h,f/img/down-arrow.svg" alt="down" class="down_button">
 
                                 <ul class="list_li">
-                                    <li><a href="https://yangungsu.github.io/team_project/;">전체</a></li>
+                                    <li><a href="https://yangungsu.github.io/team_project/">전체</a></li>
                                     <li><a href="javascript:;">치킨</a></li>
                                     <li><a href="javascript:;">피자</a></li>
                                     <li><a href="javascript:;">사이드</a></li>
@@ -222,9 +222,9 @@
                             <div class="option">
                                 <h5>[필수]기본</h5>
                                 <ul class="optionSlider1">
-                                    <li class="item1" value="0">한마리</li>
-                                    <li class="item1" value="3000">윙</li>
-                                    <li class="item1" value="4000">순살</li>
+                                    <li class="item1" data-value="0">한마리</li>
+                                    <li class="item1" data-value="3000">윙</li>
+                                    <li class="item1" data-value="4000">순살</li>
                                 </ul>
                             </div>
                             <!-- [필수]선택끝 -->
@@ -233,42 +233,42 @@
                             <div class="option">
                                 <h5>추가선택</h5>
                                 <ul class="optionSlider2">
-                                    <li class="item2" value="1500">콜라 500ML</li>
-                                    <li class="item2" value="2100">콜라 1.25L</li>
-                                    <li class="item2" value="1900">제로콜라 500ML</li>
-                                    <li class="item2" value="2500">제로콜라 1.25L</li>
-                                    <li class="item2" value="1500">스프라이트 500ML</li>
-                                    <li class="item2" value="2200">스프라이트 1.25L</li>
-                                    <li class="item2" value="8000">맵달떡볶이</li>
-                                    <li class="item2" value="2900">찍먹커리(티키마살라)</li>
-                                    <li class="item2" value="2900">찍먹커리(치킨마크니)</li>
-                                    <li class="item2" value="5000">모짜치즈볼</li>
-                                    <li class="item2" value="6000">콰트로모짜치즈볼</li>
-                                    <li class="item2" value="2800">매콤치즈 소떡소떡</li>
-                                    <li class="item2" value="3000">바게트볼</li>
-                                    <li class="item2" value="5000">바게트볼(2ea)</li>
-                                    <li class="item2" value="3800">에그미니 타르트</li>
-                                    <li class="item2" value="6000">볼케이노 치즈치밥</li>
-                                    <li class="item2" value="6000">갈비천왕 치즈치밥</li>
-                                    <li class="item2" value="4000">K웨지감자</li>
-                                    <li class="item2" value="4000">케이준감자</li>
-                                    <li class="item2" value="5000">매콤지즈 K웨지감자</li>
-                                    <li class="item2" value="5000">콘스프 K웨지감자</li>
-                                    <li class="item2" value="5000">매콤치즈 케이준</li>
-                                    <li class="item2" value="5000">콘스프 케이준</li>
-                                    <li class="item2" value="1000">치트킹(콘스프)</li>
-                                    <li class="item2" value="1000">치트킹(매콤치즈)</li>
-                                    <li class="item2" value="500">고블링 소스</li>
-                                    <li class="item2" value="500">마블링 소스</li>
-                                    <li class="item2" value="800">알블링 소스</li>
-                                    <li class="item2" value="500">마그마 소스</li>
-                                    <li class="item2" value="500">왕중왕 소스</li>
-                                    <li class="item2" value="500">오매불맛 소스</li>
-                                    <li class="item2" value="500">러블링 소스</li>
-                                    <li class="item2" value="1000">허니멜로 소스</li>
-                                    <li class="item2" value="500">매콤 소스</li>
-                                    <li class="item2" value="500">달콤 소스</li>
-                                    <li class="item2" value="1000">(토핑)남해 구운마늘(8알)</li>
+                                    <li class="item2" data-value="1500">콜라 500ML</li>
+                                    <li class="item2" data-value="2100">콜라 1.25L</li>
+                                    <li class="item2" data-value="1900">제로콜라 500ML</li>
+                                    <li class="item2" data-value="2500">제로콜라 1.25L</li>
+                                    <li class="item2" data-value="1500">스프라이트 500ML</li>
+                                    <li class="item2" data-value="2200">스프라이트 1.25L</li>
+                                    <li class="item2" data-value="8000">맵달떡볶이</li>
+                                    <li class="item2" data-value="2900">찍먹커리(티키마살라)</li>
+                                    <li class="item2" data-value="2900">찍먹커리(치킨마크니)</li>
+                                    <li class="item2" data-value="5000">모짜치즈볼</li>
+                                    <li class="item2" data-value="6000">콰트로모짜치즈볼</li>
+                                    <li class="item2" data-value="2800">매콤치즈 소떡소떡</li>
+                                    <li class="item2" data-value="3000">바게트볼</li>
+                                    <li class="item2" data-value="5000">바게트볼(2ea)</li>
+                                    <li class="item2" data-value="3800">에그미니 타르트</li>
+                                    <li class="item2" data-value="6000">볼케이노 치즈치밥</li>
+                                    <li class="item2" data-value="6000">갈비천왕 치즈치밥</li>
+                                    <li class="item2" data-value="4000">K웨지감자</li>
+                                    <li class="item2" data-value="4000">케이준감자</li>
+                                    <li class="item2" data-value="5000">매콤지즈 K웨지감자</li>
+                                    <li class="item2" data-value="5000">콘스프 K웨지감자</li>
+                                    <li class="item2" data-value="5000">매콤치즈 케이준</li>
+                                    <li class="item2" data-value="5000">콘스프 케이준</li>
+                                    <li class="item2" data-value="1000">치트킹(콘스프)</li>
+                                    <li class="item2" data-value="1000">치트킹(매콤치즈)</li>
+                                    <li class="item2" data-value="500">고블링 소스</li>
+                                    <li class="item2" data-value="500">마블링 소스</li>
+                                    <li class="item2" data-value="800">알블링 소스</li>
+                                    <li class="item2" data-value="500">마그마 소스</li>
+                                    <li class="item2" data-value="500">왕중왕 소스</li>
+                                    <li class="item2" data-value="500">오매불맛 소스</li>
+                                    <li class="item2" data-value="500">러블링 소스</li>
+                                    <li class="item2" data-value="1000">허니멜로 소스</li>
+                                    <li class="item2" data-value="500">매콤 소스</li>
+                                    <li class="item2" data-value="500">달콤 소스</li>
+                                    <li class="item2" data-value="1000">(토핑)남해 구운마늘(8알)</li>
                                 </ul>
                             </div>
                             <!-- 추가선택끝 -->

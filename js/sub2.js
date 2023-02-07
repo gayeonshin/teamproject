@@ -55,8 +55,6 @@ $(function(){
     });
 
     //필수선택
-   
-
     $('.item1:first-child').addClass('active1');
     $('.item1').click(function () {  
         total_sum1 = sum;
@@ -67,7 +65,7 @@ $(function(){
             $('<dl>').appendTo('.list');
             var basic = $(this).text();   
             $('<dt>').prependTo('.list dl:last-child').text('+'+basic);
-            var basic_value = $(this).val();
+            var basic_value = $(this).attr('data-value');
             $('<dd>').appendTo('.list dl:last-child').text(basic_value + "원");
             
             total_sum1 = total_sum1 + parseInt(basic_value);
@@ -75,7 +73,6 @@ $(function(){
         }
     })
    
-
     //추가선택 active
     $('.item2').click(function () {
         total_sum2 = sum;
@@ -85,14 +82,14 @@ $(function(){
             $('<dl>').appendTo('.addlist');
             var choice = $(this).text();
             $('<dt>').prependTo('.addlist dl:last-child').text('+'+choice);
-            var choice_value = $(this).val();
+            var choice_value = $(this).attr('data-value');
             $('<dd>').appendTo('.addlist dl:last-child').text(choice_value + "원");
 
             sum = total_sum2 + parseInt(choice_value);
             $(".price_sum").html(sum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "원");
         }else{
             let click_text= '+'+$(this).text();
-            let rm_value = $(this).val();
+            let rm_value = $(this).attr('data-value');
             
             for (let i=0; i<$('.addlist dt').length; i++){
                 let rm_text = $('.addlist dt').eq(i).text();
