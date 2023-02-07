@@ -36,11 +36,31 @@ $(function(){
         $(".number").val(parseInt($(".number").val())+1);
         sum=parseInt($(".number").val()*price_sum);
         $(".price_sum").html(sum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "원");
+
+        $('.item1').removeClass('active1').eq(0).addClass('active1');
+        $('.list dl:nth-child(2)').remove();
+        $('<dl>').appendTo('.list');
+        var basic = $('.item1').eq(0).text();   
+        $('<dt>').prependTo('.list dl:last-child').text('+'+basic);
+        basic_value = $('.item1').eq(0).attr('data-value');
+        $('<dd>').appendTo('.list dl:last-child').text(basic_value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "원");
+        $('.item2').removeClass('active2');
+        $('.addlist dl').remove();
     });
     $('.minus').click(function(){
         $(".number").val(parseInt($(".number").val())-1);
         sum=parseInt($(".number").val()*price_sum);
         $(".price_sum").html(sum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "원");
+
+        $('.item1').removeClass('active1').eq(0).addClass('active1');
+        $('.list dl:nth-child(2)').remove();
+            $('<dl>').appendTo('.list');
+            var basic = $('.item1').eq(0).text();   
+            $('<dt>').prependTo('.list dl:last-child').text('+'+basic);
+            basic_value = $('.item1').eq(0).attr('data-value');
+            $('<dd>').appendTo('.list dl:last-child').text(basic_value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "원");
+        $('.item2').removeClass('active2');
+        $('.addlist dl').remove();
     });
     $(".number").keyup(function(){
         if(isNaN($(".number").val())){
@@ -52,6 +72,9 @@ $(function(){
         }
         sum=parseInt($(".number").val()*price_sum);
         $(".price_sum").html(sum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "원");
+
+        $('.item2').removeClass('active2');
+        $('.addlist dl').remove();
     });
 
     //필수선택
@@ -65,14 +88,15 @@ $(function(){
             $('<dl>').appendTo('.list');
             var basic = $(this).text();   
             $('<dt>').prependTo('.list dl:last-child').text('+'+basic);
-            var basic_value = $(this).attr('data-value');
-            $('<dd>').appendTo('.list dl:last-child').text(basic_value + "원");
+            basic_value = $(this).attr('data-value');
+            $('<dd>').appendTo('.list dl:last-child').text(basic_value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "원");
             
             total_sum1 = total_sum1 + parseInt(basic_value);
             $(".price_sum").html(total_sum1.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "원");
         }
     })
    
+
     //추가선택 active
     $('.item2').click(function () {
         total_sum2 = sum;
@@ -83,7 +107,7 @@ $(function(){
             var choice = $(this).text();
             $('<dt>').prependTo('.addlist dl:last-child').text('+'+choice);
             var choice_value = $(this).attr('data-value');
-            $('<dd>').appendTo('.addlist dl:last-child').text(choice_value + "원");
+            $('<dd>').appendTo('.addlist dl:last-child').text(choice_value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "원");
 
             sum = total_sum2 + parseInt(choice_value);
             $(".price_sum").html(sum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "원");
@@ -97,7 +121,6 @@ $(function(){
                 if(click_text == rm_text){
                     $('.addlist dl').eq(i).remove();
                     total_sum2 = total_sum2 - rm_value;
-                    console.log(total_sum2)
                     $(".price_sum").html(total_sum2.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "원");
                     sum= total_sum2;
                 }
@@ -105,5 +128,5 @@ $(function(){
         }
         
     })
-});
 
+});
