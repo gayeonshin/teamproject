@@ -373,7 +373,7 @@ a{text-decoration: none;}
     text-align: center;
     line-height: 5rem;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin: 0;
     cursor: pointer;
     padding: 0;
@@ -484,7 +484,7 @@ a{text-decoration: none;}
 
 #section #popup #popwrap .popcontent table tr td {
     padding: 0 0 0 2rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 #section #popup #popwrap .close {
