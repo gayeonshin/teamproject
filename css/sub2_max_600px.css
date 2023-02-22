@@ -478,12 +478,12 @@ a{text-decoration: none;}
 #section #popup #popwrap .popcontent table tr th {
     border-bottom: 1px solid #666;
     text-align: left;
-    padding: 0 0 0 2.496rem;
+    padding: 0 0 0 2rem;
     font-size: 1.6rem;
 }
 
 #section #popup #popwrap .popcontent table tr td {
-    padding: 0 0 0 2.396rem;
+    padding: 0 0 0 2rem;
     font-size: 1.1rem;
 }
 
